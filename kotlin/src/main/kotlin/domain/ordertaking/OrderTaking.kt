@@ -5,11 +5,18 @@ class WidgetCode(val widgetCode: String)
 class UnitQuantity(val unitQuantity: Int)
 class KilogramQuantity(val kilogramQuantity: Float)
 
+typealias CustomerInfo = Nothing
+typealias ShippingAddress = Nothing
+typealias BillingAddress = Nothing
+typealias OrderLine = Nothing
+typealias AmountToBill = Nothing
+
 
 data class Order(
-    val customerInfo : Nothing,
-    val shippingAddress : Nothing,
-    val billingAddress : Nothing,
-    val orderLines : Nothing,
-    val amountToBill : Nothing
+    val customerInfo : CustomerInfo,
+    val shippingAddress : ShippingAddress,
+    val billingAddress : BillingAddress,
+    val orderLines : List<OrderLine>,
+    val amountToBill : AmountToBill
 )
+
