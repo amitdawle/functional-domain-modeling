@@ -11,5 +11,5 @@ data class Order(
     val shippingAddress : Nothing,
     val billingAddress : Nothing,
     val orderLines : Nothing,
-    val AmountToBill : Nothing
+    val amountToBill : Nothing
 )
